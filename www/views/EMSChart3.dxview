@@ -1,0 +1,34 @@
+<div data-options="dxView : { name: 'EMSChart3', title: 'EMSChart3' } " >
+    <div data-bind="dxCommand: { icon: 'home', id: 'cmdHome', onExecute: cmdHomeExecute, title: '' }"></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        <div>
+            <table>
+                <tr>
+                    <td id="td1">日期：</td>
+                    <td>
+                        <div id="dateFrom" data-bind="dxDateBox: {
+                                type: 'datetime',
+                                formatString: 'yyyy-MM-dd HH:mm:ss',
+                                pickerType: 'calendar',
+                                dateSerializationFormat: 'yyyy-MM-ddTHH:mm:ss'}"></div>
+                    </td>
+                    <td id="td2">至</td>
+                    <td>
+                        <div id="dateTo" data-bind="dxDateBox: {
+                                type: 'datetime',
+                                formatString: 'yyyy-MM-dd HH:mm:ss',
+                                pickerType: 'calendar',
+                                dateSerializationFormat: 'yyyy-MM-ddTHH:mm:ss'}"></div>
+                    </td>
+                    <td><div data-bind="dxButton: { text: SysMsg.load,onClick: buttonLoadClick }"></div></td>
+                    <td><!--<div data-bind="dxButton: { text: '自动刷新',onClick: buttonAutoClick }"></div>--></td>
+                    <td width="20px">&nbsp;</td>
+                    <td><div id="ckSIZE" data-bind="dxCheckBox: { value: true,text: SysMsg.scz,onValueChanged: checkChanged}"></div></td>
+                    <td><div id="ckMIN" data-bind="dxCheckBox: { value: true,text: SysMsg.min,onValueChanged: checkChanged}"></div></td>
+                    <td><div id="ckMAX" data-bind="dxCheckBox: { value: true,text: SysMsg.max,onValueChanged: checkChanged}"></div></td>
+                </tr>
+            </table>
+        </div>
+        <div id="chartPar" style="height: 300px;" data-bind="dxChart: chartOption"></div>
+    </div>
+</div>

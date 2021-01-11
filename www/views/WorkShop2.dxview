@@ -1,0 +1,76 @@
+<div data-options="dxView : { name: 'WorkShop2', title: '车间' } ">
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        <div style="height:20px;margin-top:10px">
+            <table style="font-size:larger;font-weight:bold;">
+                <tr>
+                    <td width="10px">
+                        &nbsp;
+                    </td>
+                    <td id="ws_1" width="75px" style="display:none">
+                        <div data-bind="dxButton: { text: SysMsg.ws_1,view:'EQCMenu',onClick:buttonFuncClick }"></div>
+                    </td>
+                    <td id="ws_2" width="75px" style="display:none">
+                        <div data-bind="dxButton: { text: SysMsg.ws_2,view:'TRFEdit',onClick:buttonFuncClick }"></div>
+                    </td>
+                    <td id="ws_3" width="75px" style="display:none">
+                        <div data-bind="dxButton: { text: SysMsg.ws_3,view:'M_DOC2',onClick:buttonFuncClick }"></div>
+                    </td>
+                    <td id="ws_4" width="75px" style="display:none">
+                        <div data-bind="dxButton: { text:SysMsg.ws_4,view:'',onClick:buttonReportClick }"></div>
+                    </td>
+                    <td id="ws_5" width="75px" style="display:none">
+                        <div id="btnWG" data-bind="dxButton: { text:SysMsg.ws_5,onClick:buttonWGClick }"></div>
+                    </td>
+                    <td id="ws_6" width="75px" style="display:none">
+                        <div data-bind="dxButton: { text: '选择字段',onClick:onFieldSelectClick }"></div>
+                    </td>
+                    <td id="ws_7" width="75px">
+                        <div data-bind="dxButton: { text: '批号查询',onClick:onPopFromClick }"></div>
+                    </td>
+                    <!--<td id="td1" width="75px" align="center">图示:</td>
+    <td id="td2" width="100px" align="center" style="background-color:rgb(51, 232, 37)">设备</td>
+    <td id="td3" width="100px" align="center" style="background-color:yellow">质检</td>
+    <td id="td4" width="100px" align="center" style="background-color:rgb(238, 121, 89)">转移</td>
+    <td id="td5" width="100px" align="center" style="background-color:red">其它</td>-->
+                    <td width="10px"></td>
+                    <td>
+                        <div id="txtCODE_EQP" data-bind="dxTextBox: {placeholder:SysMsg.inputEQP}"></div>
+                    </td>
+                    <td width="100px">
+                        <div data-bind="dxButton: { text: 'GO',onClick:buttonGoClick }"></div>
+                    </td>
+                    <td width="100px" align="center">
+                        <div id="btnLogoff" class="Login_Btn" data-bind="dxButton: { text: SysMsg.logoff, onClick:onLogoffClick}"></div>
+                    </td>
+                </tr>
+            </table>
+            <table id="tbLegend" style="font-size:larger;font-weight:bold;margin-top: 5px;"></table>
+        </div>
+        <div data-bind="dxScrollView: {useNative:false,showScrollbar:'never',direction:'both',scrollByContent:true }" class="ItemList-ScrollView2" style="width:100%">
+            <div id="divCanvas" />
+            <!--<table id="tbWorkShop" width="100%" style="border-spacing:8px;border-collapse: separate;font-size:larger;font-weight:bold"></table>-->
+        </div>
+        <div id="asWG" data-bind="dxActionSheet:actionSheetWGOption"></div>
+        <!--<div style="position:absolute;top:50px;bottom:0;overflow-y:auto;height:auto;width:100%">
+      <table id="tbWorkShop" width="100%" style="border-spacing:8px;border-collapse: separate;font-size:larger;font-weight:bold"></table>
+    </div>-->
+        <div id="dev_device" data-bind="dxScrollView: {useNative:false,showScrollbar:'never' }" class="ItemList-ScrollView2" style="">
+            <div id="tbDevice" class="tbDevice" width="100%" style="border-spacing:8px;border-collapse: separate;font-size:larger;font-weight:bold"></div>
+        </div>
+        <div id="popSelect" data-bind="dxPopup: popupSelectOption">
+            <!--<div id="btnSelectOK" class="Login_Btn" data-bind="dxButton: { text: 'OK', onClick:onSelectOKClick}"></div>-->
+            <div id="listSelect" data-bind="dxList: listFieldsOption"></div>
+        </div>
+        <div id="popFrom" data-bind="dxPopup: popFromOption">
+            <span style="float:left;line-height: 36px;">批号&nbsp;&nbsp;:&nbsp;&nbsp;</span>
+            <div style="float:left;margin-left:15px;" id="popFrom_ID_WO" data-bind="dxTextBox: {placeholder: '请输入批号'}"></div>
+            <div style="float:left;margin-left:15px;" id="scanBtn" data-bind="dxButton: { text: '扫码',type:'success', onClick:onScan}"></div>
+            <br /> <br /><br /> <br />
+            <span style="float:left;line-height: 36px;">物料号:</span>
+            <div style="float:left;line-height: 36px;margin-left:15px;" id="popFrom_codeItem"></div>
+            <br /> <br /><br /> <br />
+            <div style="float:left;margin-left:15px;width:120px;" data-bind="dxButton: {text: '查询',onClick:popFromSearch }"></div>
+            <div style="float:left;margin-left:15px;width:120px;" data-bind="dxButton: {text: '退出',onClick:onPopFromExit }"></div>
+        </div>
+    </div>
+</div>

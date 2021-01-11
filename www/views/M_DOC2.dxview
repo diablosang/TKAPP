@@ -1,0 +1,9 @@
+<div data-options="dxView : { name: 'M_DOC2', title: 'M_DOC2' } " >
+    <div data-bind="dxCommand: { icon: 'home', id: 'cmdHome', onExecute: cmdHomeExecute, title: '' }"></div>    
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        <div id="loadIndicator" class="indicator" data-bind="dxLoadIndicator: { visible: indicatorVisible }"></div>
+        <div id="formMain" data-bind="dxForm:formOption" class="Margin5"></div>
+        <div id="toolBar" data-bind="dxToolbar: toolBarOption"></div>
+        <div id="gridDOC" data-bind="dxDataGrid: gridDOCOption"></div>
+    </div>
+</div>

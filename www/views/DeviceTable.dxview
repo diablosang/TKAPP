@@ -1,0 +1,26 @@
+<div data-options="dxView : { name: 'DeviceTable', title: 'DeviceTable' } " >
+  <div data-bind="dxCommand: {id: 'cmdFieldSelect', title:SysMsg.selectFields, onExecute: onFieldSelectClick}"></div>
+  <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+    <div style="height:20px;margin-top:10px">
+      <table id="tbLegend" style="font-size:larger;font-weight:bold">
+        <!--<tr>
+                    <td width="75px" align="center">图示:</td>
+                    <td width="100px" align="center" style="background-color:rgb(51, 232, 37)">运行</td>
+                    <td width="100px" align="center" style="background-color:yellow">维护</td>
+                    <td width="100px" align="center" style="background-color:rgb(238, 121, 89)">维修</td>
+                    <td width="100px" align="center" style="background-color:red">大修</td>
+                    <td width="100px" align="center" style="background-color:rgb(245,245,245)">空闲中</td>
+                    
+                </tr>-->
+      </table>
+      <!--<div id="btnFieldSelect" class="Login_Btn" data-bind="dxButton: { text: '选择字段', onClick:onFieldSelectClick}" style="float:right;width:100px"></div>-->
+    </div>
+    <div data-bind="dxScrollView: {useNative:false,showScrollbar:'never' }" class="ItemList-ScrollView2">
+      <table id="tbDevice" width="100%" style="border-spacing:8px;border-collapse: separate;font-size:larger;font-weight:bold"></table>
+    </div>
+    <div id="popSelect" data-bind="dxPopup: popupSelectOption">
+      <!--<div id="btnSelectOK" class="Login_Btn" data-bind="dxButton: { text: 'OK', onClick:onSelectOKClick}"></div>-->
+      <div id="listSelect" data-bind="dxList: listFieldsOption"></div>
+    </div>
+  </div>
+</div>

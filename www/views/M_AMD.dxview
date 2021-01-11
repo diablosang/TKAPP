@@ -1,0 +1,9 @@
+<div data-options="dxView : { name: 'M_AMD', title: SysMsg.AMD } " >
+    <div data-bind="dxCommand: { icon: 'home', id: 'cmdHome', onExecute: cmdHomeExecute, title: '' }"></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+      <div class="indicator" data-bind="dxLoadIndicator: { visible: indicatorVisible }"></div>
+      <div style="overflow:hidden;">
+        <div id="gridAMD" data-bind="dxDataGrid: gridAMDOption"></div>
+      </div>
+    </div>
+</div>

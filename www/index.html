@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--<link rel="dx-theme" data-theme="android5.light" href="css/dx.android5.light.css" data-active="false"/>-->
+    <link rel="stylesheet" type="text/css" href="css/dx.spa.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.common.css" />
+    <link rel="dx-theme" data-theme="generic.light" href="css/dx.light.css" data-active="true" />
+    <link rel="dx-theme" data-theme="generic.light.compact" href="css/dx.light.compact.css" />
+    <link rel="dx-theme" data-theme="generic.contrast" href="css/dx.contrast.css" />
+    <link rel="dx-theme" data-theme="generic.contrast.compact" href="css/dx.contrast.compact.css" />
+    <link rel="dx-theme" data-theme="generic.dark.compact" href="css/dx.dark.compact.css" />
+    <link rel="dx-theme" data-theme="generic.light.compact" href="css/dx.light.compact.css" />
+
+    <title>DMAPP</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- Uncomment the line below to disable phone format detection  -->
+    <!--<meta name="format-detection" content="telephone=no">-->
+
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/knockout-3.4.0.js"></script>
+    <script type="text/javascript" src="js/dx.all.js"></script>
+    <!--<script type="text/javascript" src="js/dx.all.debug.js"></script>-->
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="app.config.js?ver=1.42.0"></script>
+    <script src="js/Asapment.js?ver=1.42.0"></script>
+    <link href="css/Trusteem.css?ver=1.42.0" rel="stylesheet" />
+    <script src="Lang.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+    <!-- Layouts -->
+    <link rel="stylesheet" type="text/css" href="layouts/Navbar/NavbarLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/Navbar/NavbarLayout.html" />
+    <script type="text/javascript" src="layouts/Navbar/NavbarLayout.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="layouts/Simple/SimpleLayout.css" />
+    <link rel="dx-template" type="text/html" href="layouts/Simple/SimpleLayout.html" />
+    <script type="text/javascript" src="layouts/Simple/SimpleLayout.js"></script>
+
+
+
+
+    <!-- Views -->
+
+    <script type="text/javascript" src="views/WorkShop.js?ver=1.42.0"></script>
+    <link rel="dx-template" type="text/html" href="views/WorkShop.dxview?ver=1.42.0" />
+    <script type="text/javascript" src="views/DataWindow.js"></script>
+    <link rel="dx-template" type="text/html" href="views/DataWindow.dxview" />
+    <script type="text/javascript" src="views/Login.js"></script>
+    <link rel="dx-template" type="text/html" href="views/Login.dxview" />
+    <link href="views/Login.css" rel="stylesheet" />
+    <script type="text/javascript" src="views/Config.js?ver=1.42.0"></script>
+    <link rel="dx-template" type="text/html" href="views/Config.dxview?ver=1.42.0" />
+
+    <script type="text/javascript" src="views/DeviceTable.js?ver=1.42.0"></script>
+    <link rel="dx-template" type="text/html" href="views/DeviceTable.dxview?ver=1.42.0" />
+
+    <script type="text/javascript" src="views/DeviceInfo.js?ver=1.42.0"></script>
+    <link rel="dx-template" type="text/html" href="views/DeviceInfo.dxview?ver=1.42.0" />
+
+    <script type="text/javascript">
+        DevExpress.config({ forceIsoDateParsing: true });
+    </script>
+
+    <script type="text/javascript" src="views/EMS_PRO_START.js?ver=1.42.0"></script>
+    <link rel="dx-template" type="text/html" href="views/EMS_PRO_START.dxview?ver=1.42.0" />
+
+    <script type="text/javascript" src="views/EMS_PRO_MAT.js"></script>
+    <link rel="dx-template" type="text/html" href="views/EMS_PRO_MAT.dxview" />
+
+    <script type="text/javascript" src="views/EMS_PRO_END.js"></script>
+    <link rel="dx-template" type="text/html" href="views/EMS_PRO_END.dxview" />
+
+    <script type="text/javascript" src="views/EMS_T_PAR.js?ver=1.42.0"></script>
+    <link rel="dx-template" type="text/html" href="views/EMS_T_PAR.dxview?ver=1.42.0" />
+
+    <script type="text/javascript" src="views/EMS_T_PQC.js?ver=1.42.0"></script>
+    <link rel="dx-template" type="text/html" href="views/EMS_T_PQC.dxview?ver=1.42.0" />
+
+    <script type="text/javascript" src="views/M_REP.js"></script>
+    <link rel="dx-template" type="text/html" href="views/M_REP.dxview" />
+
+    <script type="text/javascript" src="views/M_EMP.js"></script>
+    <link rel="dx-template" type="text/html" href="views/M_EMP.dxview" />
+
+    <script type="text/javascript" src="views/EMPEdit.js"></script>
+    <link rel="dx-template" type="text/html" href="views/EMPEdit.dxview" />
+
+    <script type="text/javascript" src="views/ROEEdit.js"></script>
+    <link rel="dx-template" type="text/html" href="views/ROEEdit.dxview" />
+
+    <script type="text/javascript" src="views/ECREdit.js"></script>
+    <link rel="dx-template" type="text/html" href="views/ECREdit.dxview" />
+
+    <script type="text/javascript" src="views/M_DOC.js"></script>
+    <link rel="dx-template" type="text/html" href="views/M_DOC.dxview" />
+
+
+    <script type="text/javascript" src="views/WorkShop2.js?ver=1.42.0"></script>
+    <link rel="dx-template" type="text/html" href="views/WorkShop2.dxview?ver=1.42.0" />
+
+    <script type="text/javascript" src="views/EQCEdit.js"></script>
+    <link rel="dx-template" type="text/html" href="views/EQCEdit.dxview" />
+
+    <script type="text/javascript" src="views/EQCMenu.js"></script>
+    <link rel="dx-template" type="text/html" href="views/EQCMenu.dxview" />
+
+    <script type="text/javascript" src="views/M_TOL.js"></script>
+    <link rel="dx-template" type="text/html" href="views/M_TOL.dxview" />
+
+    <script type="text/javascript" src="views/EMS_T_TOAP.js"></script>
+    <link rel="dx-template" type="text/html" href="views/EMS_T_TOAP.dxview" />
+
+    <script type="text/javascript" src="views/TOAPReplace.js"></script>
+    <link rel="dx-template" type="text/html" href="views/TOAPReplace.dxview" />
+
+    <script type="text/javascript" src="views/EMSChart.js?ver=1.42.0"></script>
+    <link rel="dx-template" type="text/html" href="views/EMSChart.dxview?ver=1.42.0" />
+
+    <script type="text/javascript" src="views/EMSChart2.js"></script>
+    <link rel="dx-template" type="text/html" href="views/EMSChart2.dxview" />
+
+    <script type="text/javascript" src="views/CK_T_QP.js"></script>
+    <link rel="dx-template" type="text/html" href="views/CK_T_QP.dxview" />
+
+    <script type="text/javascript" src="views/TRFEdit.js"></script>
+    <link rel="dx-template" type="text/html" href="views/TRFEdit.dxview" />
+
+    <script type="text/javascript" src="views/REP_START.js"></script>
+    <link rel="dx-template" type="text/html" href="views/REP_START.dxview" />
+
+
+    <script type="text/javascript" src="views/EMSChart3.js"></script>
+    <link rel="dx-template" type="text/html" href="views/EMSChart3.dxview" />
+
+    <script type="text/javascript" src="views/M_DOC2.js"></script>
+    <link rel="dx-template" type="text/html" href="views/M_DOC2.dxview" />
+
+    <script type="text/javascript" src="views/DMREPORT.js"></script>
+    <link rel="dx-template" type="text/html" href="views/DMREPORT.dxview" />
+
+    <script type="text/javascript" src="views/FormList.js"></script>
+    <link rel="dx-template" type="text/html" href="views/FormList.dxview" />
+
+    <script type="text/javascript" src="views/EMS_T_NOTE.js"></script>
+    <link rel="dx-template" type="text/html" href="views/EMS_T_NOTE.dxview" />
+
+		<script type="text/javascript" src="views/M_AMD.js"></script>
+		<link rel="dx-template" type="text/html" href="views/M_AMD.dxview"/>
+
+		<script type="text/javascript" src="views/EMS_T_AMD.js?ver=1.42.0"></script>
+		<link rel="dx-template" type="text/html" href="views/EMS_T_AMD.dxview?ver=1.42.0"/>
+
+
+		<script type="text/javascript" src="views/EMS_T_WG.js?ver=1.42.0"></script>
+		<link rel="dx-template" type="text/html" href="views/EMS_T_WG.dxview?ver=1.42.0"/>
+
+		<script type="text/javascript" src="views/EMS_PRO_START20.js?ver=1.42.0"></script>
+		<link rel="dx-template" type="text/html" href="views/EMS_PRO_START20.dxview?ver=1.42.0"/>
+
+		<script type="text/javascript" src="views/EMS_PRO_END20.js?ver=1.42.0"></script>
+		<link rel="dx-template" type="text/html" href="views/EMS_PRO_END20.dxview?ver=1.42.0"/>
+
+		<script type="text/javascript" src="views/EMS_T_WG20.js?ver=1.42.0"></script>
+		<link rel="dx-template" type="text/html" href="views/EMS_T_WG20.dxview?ver=1.42.0"/>
+
+		<script type="text/javascript" src="views/Process.js"></script>
+		<link rel="dx-template" type="text/html" href="views/Process.dxview"/>
+
+		<script type="text/javascript" src="views/Maintance.js"></script>
+		<link rel="dx-template" type="text/html" href="views/Maintance.dxview"/>
+
+		<script type="text/javascript" src="views/Parameter.js"></script>
+		<link rel="dx-template" type="text/html" href="views/Parameter.dxview"/>
+
+		<script type="text/javascript" src="views/EMS_T_QC201.js"></script>
+		<link rel="dx-template" type="text/html" href="views/EMS_T_QC201.dxview"/>
+
+		<script type="text/javascript" src="views/EMS_T_QC202.js"></script>
+		<link rel="dx-template" type="text/html" href="views/EMS_T_QC202.dxview"/>
+
+
+		<script type="text/javascript" src="views/EMS_STD_CHART.js"></script>
+		<link rel="dx-template" type="text/html" href="views/EMS_STD_CHART.dxview"/>
+
+		<script type="text/javascript" src="views/EMS_T_PAREP.js"></script>
+		<link rel="dx-template" type="text/html" href="views/EMS_T_PAREP.dxview"/>
+
+		<script type="text/javascript" src="views/EMS_T_PARIT.js"></script>
+		<link rel="dx-template" type="text/html" href="views/EMS_T_PARIT.dxview"/>
+
+		<script type="text/javascript" src="views/REP_ITEM.js"></script>
+		<link rel="dx-template" type="text/html" href="views/REP_ITEM.dxview"/>
+		<script type="text/javascript" src="views/EMS_T_PARIT.js?ver=1.42.0"></script>
+		<link rel="dx-template" type="text/html" href="views/EMS_T_PARIT.dxview?ver=1.42.0"/>
+</head>
+<body>
+    <input id="fileSelector" type="file" style="display:none" />
+    <input hidden="hidden" value="http://localhost:61862" id="WebApiServerURL" />
+</body>
+</html>
+

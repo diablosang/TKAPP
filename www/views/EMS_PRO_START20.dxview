@@ -1,0 +1,17 @@
+<div data-options="dxView : { name: 'EMS_PRO_START20', title: 'EMS_PRO_START20' } ">
+  <div data-bind="dxCommand: { icon: 'home', id: 'cmdHome', onExecute: cmdHomeExecute, title: '' }"></div>
+  <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+    <div id="loadIndicator" class="indicator" data-bind="dxLoadIndicator: { visible: indicatorVisible }"></div>
+    <div data-bind="dxScrollView: {useNative: false}" class="ItemList-ScrollView">
+      <div id="divP" style="float:left;height:100%;background-color:#acd8fb;">
+        <div id="tileBar" data-bind="dxTileView: tileBarOption">
+        </div>
+      </div>
+      <div style="overflow:hidden;">
+          <div id="scanBtn" class="Login_Btn" data-bind="dxButton: { text: '扫码', onClick:onScan}"></div>
+          <div id="formMain" data-bind="dxForm:formOption" class="Margin5"></div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div data-options="dxView : { name: 'TOAPReplace', title: '刀具更换' } " >
+  <div data-bind="dxCommand: { icon: 'home', id: 'cmdHome', onExecute: cmdHomeExecute, title: '' }"></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+      <div id="loadIndicator" class="indicator" data-bind="dxLoadIndicator: { visible: indicatorVisible }"></div>
+      <div id="divP" style="float:left;width:212px;height:100%;background-color:#acd8fb;">
+        <div id="tileBar" data-bind="dxTileView: tileBarOption"></div>
+      </div>
+      <div style="overflow:hidden;">
+        <div id="gridDetail" data-bind="dxDataGrid: gridDetailOption"></div>
+      </div>
+    </div>
+</div>

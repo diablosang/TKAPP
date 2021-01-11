@@ -1,0 +1,60 @@
+<div data-options="dxView : { name: 'WorkShop', title: '车间' } " style="height:100%">
+  <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background" style="height:100%">
+    <div class="indicator" data-bind="dxLoadIndicator: { visible: indicatorVisible }"></div>
+    <!--<div data-bind="dxToolbar: toolBarOption"></div>-->
+    <div style="margin-left:10px">
+      <table>
+        <tr>
+          <td>
+            <div id="txtCODE_EQP" data-bind="dxTextBox: {placeholder:'请输入设备代码' }"></div>
+          </td>
+          <td>
+            <div data-bind="dxButton: { text: 'GO',onClick:buttonGoClick }"></div>
+          </td>
+        </tr>
+      </table>
+     
+    </div>
+    <div id="listDash" data-bind="dxList: listOption">
+      <div data-options="dxTemplate: {name: 'item'}">
+        <div class="dash-item-header">
+          <table>
+            <tr>
+              <td align="left" width="150px">
+                <div data-bind="text: $data.CODE_LINE"></div>
+              </td>
+              <td align="left" width="300px">
+                <div data-bind="text: $data.DESC_LINE"></div>
+              </td>
+              <td align="left" width="150px">
+                <div data-bind="text: $data.DISP1"></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="popSearch" data-bind="dxPopup: searchPopupOption">
+      <div id="txtSearch" data-bind="dxTextBox: {placeholder:'设备模糊查找'}"></div>
+      <div id="listSearch" data-bind="dxList: listSearchOption">
+        <div data-options="dxTemplate: {name: 'item'}">
+          <div class="dash-item-header">
+            <table>
+              <tr>
+                <td align="left" width="150px">
+                  <div data-bind="text: $data.CODE_EQP"></div>
+                </td>
+                <td align="left" width="300px">
+                  <div data-bind="text: $data.DESC_DISP1"></div>
+                </td>
+                <td align="left" width="300px">
+                  <div data-bind="text: $data.DESC_DISP2"></div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

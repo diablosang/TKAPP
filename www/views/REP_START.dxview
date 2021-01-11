@@ -1,0 +1,12 @@
+<div data-options="dxView : { name: 'REP_START', title: 'REP_START' } " >
+    <div data-bind="dxCommand: { icon: 'home', id: 'cmdHome', onExecute: cmdHomeExecute, title: '' }"></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        <div id="loadIndicator" class="indicator" data-bind="dxLoadIndicator: { visible: indicatorVisible }"></div>
+        <div id="divP" style="float:left;height:100%;background-color:#acd8fb;">
+            <div id="tileBar" data-bind="dxTileView: tileBarOption"></div>
+        </div>
+        <div style="overflow:hidden;">
+            <div id="formMain" data-bind="dxForm:formOption" style="margin: 5px 5px 5px 5px"></div>
+        </div>
+    </div>
+</div>

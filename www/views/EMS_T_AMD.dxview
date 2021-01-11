@@ -1,0 +1,20 @@
+<div data-options="dxView : { name: 'EMS_T_AMD', title: SysMsg.AMD } " >
+    <div data-bind="dxCommand: { icon: 'home', id: 'cmdHome', onExecute: cmdHomeExecute, title: '' }"></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+      <div id="loadIndicator" class="indicator" data-bind="dxLoadIndicator: { visible: indicatorVisible }"></div>
+      <div id="divP" style="float:left;width:212px;height:100%;background-color:#acd8fb;">
+        <div id="tileBar" data-bind="dxTileView: tileBarOption">
+        </div>
+      </div>
+      <div style="overflow:hidden;">
+        <div id="formMain" data-bind="dxForm:formOption" class="Margin5"></div>
+      </div>
+      <div>
+        <image id="imgAMD" class="FormSizedImg"></image>
+      </div>
+      <div>
+        <div id="btnUpload" data-bind="dxButton: btnUploadOption" style="margin-left:10px"></div>
+        <div id="btnCamera" data-bind="dxButton: btnCameraOption" style="margin-left:10px"></div>
+      </div>
+    </div>
+</div>

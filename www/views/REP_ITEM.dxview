@@ -1,0 +1,58 @@
+<div data-options="dxView : { name: 'REP_ITEM', title: 'REP_ITEM' } ">
+    <div data-bind="dxCommand: { icon: 'home', id: 'cmdHome', onExecute: cmdHomeExecute, title: '' }"></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " style="width:100%;" class="dx-content-background">
+        <div class="indicator" data-bind="dxLoadIndicator: { visible: indicatorVisible }"></div>
+        <div id="divP" style="float:left;height:100%;background-color:#acd8fb;">
+            <div id="tileMenu" class="tileMenu" data-bind="dxTileView: tileViewOption">
+            </div>
+        </div>
+        <div data-bind="dxScrollView: {direction: 'both'}" style="width:60%;float:left;">
+            <div id="formMain" data-bind="dxForm:formOption" style="margin: 5px 5px 5px 5px"></div>
+            <div id="tabDetail" data-bind="dxTabs: tabOptions"></div>
+            <div id="gridNDRF" data-bind="dxDataGrid: gridNDRFOption" class="Margin5"></div>
+            <div id="gridTAPR" data-bind="dxDataGrid: gridTAPROption" class="Margin5" style="display:none"></div>
+            <!--<div id="formTabs" data-bind="dxTabPanel: tabPanelOptions">
+                <div data-options="dxTemplate : { name: 'name' } ">
+                    <span data-bind="text: $data.name"></span>
+                </div>
+                <div data-options="dxTemplate : { name: 'list' } ">
+                    <div class="tabpanel-item">
+                        <div data-bind="dataSource: $data.list,keyExpr: 'SID',columns: ['DATE_APL', 'USER_APL', 'CODE_ITEM','DESC_ITEM','QTY_APL','STATUS']" class="GridScroll"></div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        
+        <div id="popUser" data-bind="dxPopup: { title: '身份验证', showTitle: true, visible:popUserVisible,height:250,width:300}">
+            <div>
+                <table width="100%">
+                    <tr>
+                        <td>用户名：</td>
+                        <td>
+                            <div id="txtPopUser" data-bind="dxTextBox: {}">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>密码：</td>
+                        <td>
+                            <div id="txtPopPwd" data-bind="dxTextBox: {mode:'password'}">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <div data-bind="dxButton: { text: '确定',onClick: onPopOKClick}"></div>
+                        </td>
+                        <td align="center">
+                            <div data-bind="dxButton: { text: '取消',onClick: onPopCancelClick}"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

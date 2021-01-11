@@ -1,0 +1,37 @@
+<div data-options="dxView : { name: 'EMS_STD_CHART', title: '曲线图' } ">
+    <div data-bind="dxCommand: { icon: 'home', id: 'cmdHome', onExecute: cmdHomeExecute, title: '' }"></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        <div>
+            <table>
+                <tr>
+                    <td id="td0">Type：</td>
+                    <td>
+                        <div id="listDetail" style="width:120px;" data-bind="dxTagBox:{displayExpr: 'DESC_QP',valueExpr: 'ID_QP',maxDisplayedTags:1,showSelectionControls: true}"></div>
+                    </td>
+                    <td id="td1">日期：</td>
+                    <td>
+                        <div id="dateFrom" data-bind="dxDateBox: {
+                                type: 'datetime',
+                                formatString: 'yyyy-MM-dd HH:mm:ss',
+                                pickerType: 'calendar',
+                                dateSerializationFormat: 'yyyy-MM-ddTHH:mm:ss'}"></div>
+                    </td>
+                    <td id="td2">至</td>
+                    <td>
+                        <div id="dateTo" data-bind="dxDateBox: {
+                                type: 'datetime',
+                                formatString: 'yyyy-MM-dd HH:mm:ss',
+                                pickerType: 'calendar',
+                                dateSerializationFormat: 'yyyy-MM-ddTHH:mm:ss'}"></div>
+                    </td>
+                    <td>
+                        <div data-bind="dxButton: { text: 'OK',onClick: buttonLoadClick }"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div data-bind="dxScrollView: SvOption">
+            <div style="width:90%;margin-left:auto;margin-right:auto;" id="charts"></div>
+        </div>
+    </div>
+</div>

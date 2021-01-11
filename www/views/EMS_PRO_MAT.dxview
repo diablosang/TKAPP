@@ -1,0 +1,13 @@
+<div data-options="dxView : { name: 'EMS_PRO_MAT', title: '辅料添加' } " >
+  <div data-bind="dxCommand: { icon: 'home', id: 'cmdHome', onExecute: cmdHomeExecute, title: '' }"></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        <div id="loadIndicator" class="indicator" data-bind="dxLoadIndicator: { visible: indicatorVisible }"></div>
+        <div id="divP" style="float:left;height:100%;background-color:#acd8fb;">
+            <div id="tileBar" data-bind="dxTileView: tileBarOption">
+            </div>
+        </div>
+        <div style="overflow:hidden;">
+            <div id="formMain" data-bind="dxForm:formOption" class="Margin5"></div>
+        </div>
+    </div>
+</div>

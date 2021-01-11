@@ -1,0 +1,6 @@
+<div data-options="dxView : { name: 'EMSChartCommon', title: 'EMSChartCommon' } " >
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+        <p style="padding: 5px">To learn more about DevExtreme, check out the <a href="https://js.devexpress.com/Documentation/" target="_blank">Documentation page</a>.</p>
+        <p style="padding: 5px">Note: To disable the simulator debugging environment, set the project's 'Run in Simulator' property to false.</p>
+    </div>
+</div>

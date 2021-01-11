@@ -1,0 +1,19 @@
+﻿.Login_Btn {
+    /*margin: 0 auto;*/
+    width: 100%;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.Login_Header {
+    margin-top: 10px;
+    margin-left: 10px;
+    float:left;
+}
+
+.Login_HeaderR {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right:10px;
+    float:right;
+}

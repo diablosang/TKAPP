@@ -1,0 +1,67 @@
+/* Layout */
+
+.simple-layout,
+.simple-layout-tablet {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.simple-layout .layout-header {
+    position: absolute;
+    width: 100%;
+}
+
+.simple-layout .layout-content {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+
+.simple-layout .layout-content > div,
+.simple-layout .transition-frame {
+    height: 100%;
+    width: 100%;
+}
+
+.simple-layout .view-footer {
+    position: static;
+}
+
+.simple-layout .view-footer .dx-toolbar {
+    background: transparent;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.simple-layout .view-footer .dx-toolbar .dx-toolbar-center {
+    width: 100%;
+}
+
+/* generic */
+
+.dx-theme-generic .simple-layout .layout-content {
+    top: 56px;
+    bottom: 0;
+}
+
+.dx-theme-generic.dx-device-mobile .simple-layout .layout-header {
+    height: 56px;
+}
+
+.dx-theme-generic.dx-device-mobile .simple-layout .layout-header .dx-toolbar {
+    background: none;
+}
+
+.dx-theme-generic .simple-layout .layout-header .dx-toolbar {
+    padding: 0 10px;
+}
+
+.dx-theme-generic .simple-layout .layout-header .dx-toolbar-items-container {
+    height: 56px;
+}
+
+.dx-theme-generic .simple-layout .view-footer .dx-button {
+    width: 97%;
+    overflow: visible;
+}

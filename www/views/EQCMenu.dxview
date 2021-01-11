@@ -1,0 +1,6 @@
+<div data-options="dxView : { name: 'EQCMenu', title: '加工质检' } " >
+    <div data-bind="dxCommand: { icon: 'home', id: 'cmdHome', onExecute: cmdHomeExecute, title: '' }"></div>
+    <div data-options="dxContent : { targetPlaceholder: 'content' } " class="dx-content-background">
+      <div id="tileBar" data-bind="dxTileView: tileBarOption"></div>
+    </div>
+</div>

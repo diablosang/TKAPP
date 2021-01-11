@@ -1,0 +1,147 @@
+﻿html,
+body,
+.dx-viewport {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.CavItem {
+    position: absolute;
+    z-index: 9;
+    border: 1px solid;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px #9b9b9b;
+    background-color: #dadada;
+}
+
+    .CavItem:hover {
+        opacity:0.7;
+    }
+
+.CavBox {
+    position: inherit;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+
+.CavText {
+    font-size: 14px;
+}
+
+.div_deivce {
+    text-align: center;
+    box-shadow: 3px 3px 3px #888888;
+    border-radius: 7px;
+    background-color: #F5F5F5;
+    vertical-align: top;
+    display: inline-grid;
+    min-width: 120px;
+    min-height: 75px;
+    margin: 10px;
+    padding: 10px;
+}
+.div_deivce_item{
+    font-size:small;
+}
+@media screen and(-ms-high-contrast:active),(-ms-high-contrast:none) {
+    .div_deivce {
+        float:left; 
+        list-style-type:none;
+    }
+
+    .tbDevice {
+    }
+}
+
+.status_op_0 {
+    background-color: #33E825 !important;
+}
+.status_op_7 {
+    background-color: #FFFF00 !important;
+}
+.status_op_2 {
+    background-color: #FF2D2D !important;
+}
+.status_op_3 {
+    background-color: #2894FF !important;
+}
+.status_op_4 {
+    background-color: #F5F5F5 !important;
+}
+
+input[readonly] {
+    background-color: rgb(245,245,245);
+}
+
+.tileMenu dx-scrollable-content{
+    min-height:unset;
+}
+.dx-field-item-label-content{
+    width:65px;
+}
+.parameter_sub_btn{
+    margin-left:50px;
+}
+.chart_div{
+    border:2px solid #848484;
+    padding:5px;
+    margin-bottom:10px;
+    border-radius:5px;
+}
+.item_flex_content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin:10px;
+}
+.item_flex .keyWord {
+    background-color: #FFF;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+}
+.item_flex .CODEWS {
+    font-weight: bold;
+    margin-top:10px;
+    margin-left:5px;
+}
+.item_flex .lineName {
+    flex-basis: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top:10px;
+}
+    .item_flex .lineStatus {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+    }
+        .item_flex .lineStatus div {
+            width: 24px;
+            height: 24px;
+            border-radius: 12px;
+            text-align: center;
+            line-height: 24px;
+            color: #fff;
+            margin-top: 5px;
+        }
+.COUNTR {
+    background-color: #5fb742;
+}
+.COUNTS {
+    background-color: #808080;
+}
+.COUNTU {
+    background-color: #e01c18;
+}
